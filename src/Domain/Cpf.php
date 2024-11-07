@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Domain;
+
 class Cpf
 {
     private $cpfNumber;
@@ -9,8 +11,7 @@ class Cpf
      */
     public function __construct($cpfNumber)
     {
-        if ($this->validateCpfNumber($cpfNumber) === false)
-        {
+        if ($this->validateCpfNumber($cpfNumber) === false) {
             throw new InvalidArgumentException("This cpf number is not valid");
         }
         

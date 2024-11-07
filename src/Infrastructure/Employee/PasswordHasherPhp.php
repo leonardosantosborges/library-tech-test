@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Infrastructure\Employee;
+
 class PasswordHasherPhp implements \Employee\PasswordHasher
 {
     public function hash(string $password): string

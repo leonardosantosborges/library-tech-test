@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Domain;
+
 class Email
 {
     private string $email;
@@ -9,8 +11,7 @@ class Email
      */
     public function __construct(string $email)
     {
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false)
-        {
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
             throw new InvalidArgumentException("This is not a valid email address");
         }
 

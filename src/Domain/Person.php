@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Domain;
+
 class Person
 {
     private string $name;

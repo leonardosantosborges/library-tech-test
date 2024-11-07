@@ -1,6 +1,7 @@
 <?php
 
 namespace Customer;
+
 class PhoneNumber
 {
     private string $areaCode;

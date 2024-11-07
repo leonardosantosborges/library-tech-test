@@ -20,5 +20,4 @@ class Customer extends \Person
         parent::__construct($cpf, $name, $email);
         $this->phone = $phone;
     }
-
 }
