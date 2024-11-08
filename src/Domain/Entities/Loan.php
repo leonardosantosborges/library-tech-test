@@ -25,6 +25,4 @@ class Loan
         $this->loanDate = $loanDate;
         $this->dueDate = $dueDate;
     }
-
-
 }
