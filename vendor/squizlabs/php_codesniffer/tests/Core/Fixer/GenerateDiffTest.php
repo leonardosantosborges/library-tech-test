@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests for diff generation.
+ * tests for diff generation.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2024 Juliette Reinders Folmer. All rights reserved.
@@ -15,7 +15,7 @@ use PHP_CodeSniffer\Tests\ConfigDouble;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Tests for diff generation.
+ * tests for diff generation.
  *
  * Note: these tests are specifically about the Fixer::generateDiff() method and do not
  * test running the fixer itself, nor generating a diff based on a fixer run.

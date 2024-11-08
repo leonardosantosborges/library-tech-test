@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests that classes and interfaces are not declared in .php files.
+ * tests that classes and interfaces are not declared in .php files.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)

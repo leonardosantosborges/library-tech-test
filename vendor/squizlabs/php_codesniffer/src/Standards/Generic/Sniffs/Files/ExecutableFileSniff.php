@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests that files are not executable.
+ * tests that files are not executable.
  *
  * @author    Matthew Peveler <matt.peveler@gmail.com>
  * @copyright 2019 Matthew Peveler

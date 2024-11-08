@@ -35,7 +35,7 @@ class AllSniffs
     /**
      * Add all sniff unit tests into a test suite.
      *
-     * Sniff unit tests are found by recursing through the 'Tests' directory
+     * Sniff unit tests are found by recursing through the 'tests' directory
      * of each installed coding standard.
      *
      * @return \PHPUnit\Framework\TestSuite
@@ -65,7 +65,7 @@ class AllSniffs
                 continue;
             }
 
-            $testsDir = $details['path'].DIRECTORY_SEPARATOR.'Tests'.DIRECTORY_SEPARATOR;
+            $testsDir = $details['path'].DIRECTORY_SEPARATOR.'tests'.DIRECTORY_SEPARATOR;
             if (is_dir($testsDir) === false) {
                 // No tests for this standard.
                 continue;
@@ -79,7 +79,7 @@ class AllSniffs
                     continue;
                 }
 
-                // Tests must have the extension 'php'.
+                // tests must have the extension 'php'.
                 $parts = explode('.', $file);
                 $ext   = array_pop($parts);
                 if ($ext !== 'php') {

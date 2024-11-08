@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests for the \PHP_CodeSniffer\Files\File:getClassProperties method.
+ * tests for the \PHP_CodeSniffer\Files\File:getClassProperties method.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2022 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -12,7 +12,7 @@ namespace PHP_CodeSniffer\Tests\Core\File;
 use PHP_CodeSniffer\Tests\Core\AbstractMethodUnitTest;
 
 /**
- * Tests for the \PHP_CodeSniffer\Files\File:getClassProperties method.
+ * tests for the \PHP_CodeSniffer\Files\File:getClassProperties method.
  *
  * @covers \PHP_CodeSniffer\Files\File::getClassProperties
  */

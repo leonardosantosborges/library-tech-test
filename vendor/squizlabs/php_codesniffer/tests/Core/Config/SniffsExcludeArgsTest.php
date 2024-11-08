@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests for the \PHP_CodeSniffer\Config --sniffs and --exclude arguments.
+ * tests for the \PHP_CodeSniffer\Config --sniffs and --exclude arguments.
  *
  * @author  Dan Wallis <dan@wallis.nz>
  * @license https://github.com/PHPCSStandards/PHP_CodeSniffer/blob/master/licence.txt BSD Licence
@@ -12,7 +12,7 @@ use PHP_CodeSniffer\Tests\ConfigDouble;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Tests for the \PHP_CodeSniffer\Config --sniffs and --exclude arguments.
+ * tests for the \PHP_CodeSniffer\Config --sniffs and --exclude arguments.
  *
  * @covers \PHP_CodeSniffer\Config::processLongArgument
  */

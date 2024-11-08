@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the conversion of square bracket tokens to short array tokens.
+ * tests the conversion of square bracket tokens to short array tokens.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2020 Squiz Pty Ltd (ABN 77 084 670 600)

@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests that unclosed docblocks during live coding are handled correctly.
+ * tests that unclosed docblocks during live coding are handled correctly.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2024 PHPCSStandards and contributors
@@ -10,7 +10,7 @@
 namespace PHP_CodeSniffer\Tests\Core\Tokenizer\Comment;
 
 /**
- * Tests that unclosed docblocks during live coding are handled correctly.
+ * tests that unclosed docblocks during live coding are handled correctly.
  *
  * @covers PHP_CodeSniffer\Tokenizers\Comment
  */

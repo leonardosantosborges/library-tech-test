@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the backfilling of numeric separators to PHP < 7.4.
+ * tests the backfilling of numeric separators to PHP < 7.4.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2019 Squiz Pty Ltd (ABN 77 084 670 600)

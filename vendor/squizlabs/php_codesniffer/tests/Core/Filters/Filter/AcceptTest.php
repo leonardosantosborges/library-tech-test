@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests for the \PHP_CodeSniffer\Filters\Filter::accept method.
+ * tests for the \PHP_CodeSniffer\Filters\Filter::accept method.
  *
  * @author    Willington Vega <wvega@wvega.com>
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
@@ -17,7 +17,7 @@ use PHP_CodeSniffer\Tests\Core\Filters\AbstractFilterTestCase;
 use RecursiveArrayIterator;
 
 /**
- * Tests for the \PHP_CodeSniffer\Filters\Filter::accept method.
+ * tests for the \PHP_CodeSniffer\Filters\Filter::accept method.
  *
  * @covers \PHP_CodeSniffer\Filters\Filter
  */

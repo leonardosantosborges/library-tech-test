@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests for the \PHP_CodeSniffer\Files\File::getMethodParameters method.
+ * tests for the \PHP_CodeSniffer\Files\File::getMethodParameters method.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
@@ -14,7 +14,7 @@ namespace PHP_CodeSniffer\Tests\Core\File;
 use PHP_CodeSniffer\Tests\Core\AbstractMethodUnitTest;
 
 /**
- * Tests for the \PHP_CodeSniffer\Files\File::getMethodParameters method.
+ * tests for the \PHP_CodeSniffer\Files\File::getMethodParameters method.
  *
  * @covers \PHP_CodeSniffer\Files\File::getMethodParameters
  */

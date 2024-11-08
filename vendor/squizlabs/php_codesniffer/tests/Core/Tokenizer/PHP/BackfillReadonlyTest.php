@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the support of PHP 8.1 "readonly" keyword.
+ * tests the support of PHP 8.1 "readonly" keyword.
  *
  * @author    Jaroslav Hanslík <kukulich@kukulich.cz>
  * @copyright 2021 Squiz Pty Ltd (ABN 77 084 670 600)

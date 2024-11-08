@@ -2,9 +2,9 @@
 
 namespace App\Infrastructure\Employee;
 
-class PasswordHasherPhp implements \Employee\PasswordHasher
+class PasswordHasherPhp implements \Services\PasswordHasher
 {
-    public function hash(string $password): string
+    static public function hash(string $password): string
     {
         return password_hash($password, PASSWORD_ARGON2ID);
     }

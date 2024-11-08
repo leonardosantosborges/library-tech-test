@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the retokenization of the double arrow to T_MATCH_ARROW for PHP 8.0 match structures
+ * tests the retokenization of the double arrow to T_MATCH_ARROW for PHP 8.0 match structures
  * and makes sure that the tokenization of other double arrows (array, arrow function, yield)
  * is not aversely affected.
  *

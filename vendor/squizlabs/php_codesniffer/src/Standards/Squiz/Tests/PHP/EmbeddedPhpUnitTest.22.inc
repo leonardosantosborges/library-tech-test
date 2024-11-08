@@ -2,7 +2,7 @@
 <?php
 // This test case file MUST always start with a long open PHP tag set (with this comment) to prevent
 // the tests running into the "first PHP open tag excepted" condition breaking the tests.
-// Tests related to that "first PHP open tag excepted" condition should go in separate files.
+// tests related to that "first PHP open tag excepted" condition should go in separate files.
 ?>
 <!--
 Content indent calculation should not look at first token in the stack, but only at the line containing the PHP open tag for the block.
@@ -27,4 +27,4 @@ Open tag indent calculation should not look at first token in the stack, but onl
 <?php
 // This test case file MUST always end with an unclosed long open PHP tag (with this comment) to prevent
 // the tests running into the "last PHP closing tag excepted" condition breaking tests.
-// Tests related to that "last PHP closing tag excepted" condition should go in separate files.
+// tests related to that "last PHP closing tag excepted" condition should go in separate files.

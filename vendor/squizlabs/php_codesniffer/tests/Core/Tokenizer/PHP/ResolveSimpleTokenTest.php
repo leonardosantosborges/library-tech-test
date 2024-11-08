@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests that simple tokens are assigned the correct token type and code.
+ * tests that simple tokens are assigned the correct token type and code.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2024 PHPCSStandards and contributors
@@ -13,7 +13,7 @@ use PHP_CodeSniffer\Tests\Core\Tokenizer\AbstractTokenizerTestCase;
 use PHP_CodeSniffer\Util\Tokens;
 
 /**
- * Tests that simple tokens are assigned the correct token type and code.
+ * tests that simple tokens are assigned the correct token type and code.
  *
  * @covers PHP_CodeSniffer\Tokenizers\PHP::resolveSimpleToken
  */

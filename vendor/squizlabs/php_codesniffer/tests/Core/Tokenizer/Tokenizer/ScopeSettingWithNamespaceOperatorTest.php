@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the scope opener/closers are set correctly when the namespace keyword is used as an operator.
+ * tests the scope opener/closers are set correctly when the namespace keyword is used as an operator.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2020 Squiz Pty Ltd (ABN 77 084 670 600)

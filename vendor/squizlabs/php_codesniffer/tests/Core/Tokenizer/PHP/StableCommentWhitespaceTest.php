@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the comment tokenization.
+ * tests the comment tokenization.
  *
  * Comment have their own tokenization in PHPCS anyhow, including the PHPCS annotations.
  * However, as of PHP 8, the PHP native comment tokenization has changed.

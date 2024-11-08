@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the tokenization for heredoc/nowdoc constructs.
+ * tests the tokenization for heredoc/nowdoc constructs.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2024 PHPCSStandards and contributors
@@ -13,7 +13,7 @@ use PHP_CodeSniffer\Tests\Core\Tokenizer\AbstractTokenizerTestCase;
 use PHP_CodeSniffer\Util\Tokens;
 
 /**
- * Tests the tokenization for heredoc/nowdoc constructs.
+ * tests the tokenization for heredoc/nowdoc constructs.
  *
  * Verifies that:
  * - Nowdoc opener/closers are retokenized from `T_[START_|END_]HEREDOC` to `T_[START_|END_]NOWDOC`.

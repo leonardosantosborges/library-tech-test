@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the comment tokenization with Windows line endings.
+ * tests the comment tokenization with Windows line endings.
  *
  * Basically the same as the StableCommentWhitespaceTest, but now for
  * Windows line endings.

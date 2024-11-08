@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests that single line docblocks are tokenized correctly.
+ * tests that single line docblocks are tokenized correctly.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2024 PHPCSStandards and contributors
@@ -10,7 +10,7 @@
 namespace PHP_CodeSniffer\Tests\Core\Tokenizer\Comment;
 
 /**
- * Tests that single line docblocks are tokenized correctly.
+ * tests that single line docblocks are tokenized correctly.
  *
  * @covers PHP_CodeSniffer\Tokenizers\Comment
  */

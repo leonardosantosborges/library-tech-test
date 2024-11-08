@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests for the \PHP_CodeSniffer\Ruleset class.
+ * tests for the \PHP_CodeSniffer\Ruleset class.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2019 Juliette Reinders Folmer. All rights reserved.
@@ -15,7 +15,7 @@ use PHPUnit\Framework\TestCase;
 use ReflectionObject;
 
 /**
- * Tests for the \PHP_CodeSniffer\Ruleset class.
+ * tests for the \PHP_CodeSniffer\Ruleset class.
  *
  * @covers \PHP_CodeSniffer\Ruleset
  */

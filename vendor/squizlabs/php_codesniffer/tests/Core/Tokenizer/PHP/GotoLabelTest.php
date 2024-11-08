@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the tokenization of goto declarations and statements.
+ * tests the tokenization of goto declarations and statements.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2020 Squiz Pty Ltd (ABN 77 084 670 600)

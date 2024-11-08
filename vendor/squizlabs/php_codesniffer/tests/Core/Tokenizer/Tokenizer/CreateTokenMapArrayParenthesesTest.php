@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests that the array keyword is tokenized correctly.
+ * tests that the array keyword is tokenized correctly.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2021 Squiz Pty Ltd (ABN 77 084 670 600)

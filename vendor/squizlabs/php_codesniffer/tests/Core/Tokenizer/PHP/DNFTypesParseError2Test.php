@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests that parentheses tokens are not converted to type parentheses tokens in broken DNF types.
+ * tests that parentheses tokens are not converted to type parentheses tokens in broken DNF types.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2024 PHPCSStandards and contributors

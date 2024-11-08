@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests for the \PHP_CodeSniffer\Autoload::determineLoadedClass method.
+ * tests for the \PHP_CodeSniffer\Autoload::determineLoadedClass method.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -13,7 +13,7 @@ use PHP_CodeSniffer\Autoload;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Tests for the \PHP_CodeSniffer\Autoload::determineLoadedClass method.
+ * tests for the \PHP_CodeSniffer\Autoload::determineLoadedClass method.
  *
  * @covers \PHP_CodeSniffer\Autoload::determineLoadedClass
  */

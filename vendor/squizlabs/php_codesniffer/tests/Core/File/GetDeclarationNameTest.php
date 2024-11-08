@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests for the \PHP_CodeSniffer\Files\File::getDeclarationName method.
+ * tests for the \PHP_CodeSniffer\Files\File::getDeclarationName method.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2022-2024 PHPCSStandards Contributors
@@ -12,7 +12,7 @@ namespace PHP_CodeSniffer\Tests\Core\File;
 use PHP_CodeSniffer\Tests\Core\AbstractMethodUnitTest;
 
 /**
- * Tests for the \PHP_CodeSniffer\Files\File:getDeclarationName method.
+ * tests for the \PHP_CodeSniffer\Files\File:getDeclarationName method.
  *
  * @covers \PHP_CodeSniffer\Files\File::getDeclarationName
  */

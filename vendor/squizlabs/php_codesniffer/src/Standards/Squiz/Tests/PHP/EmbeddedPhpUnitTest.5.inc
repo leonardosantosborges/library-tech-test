@@ -1,7 +1,7 @@
 <?php
 // This test case file MUST always start with a long open PHP tag set (with this comment) to prevent
 // the tests running into the "first PHP open tag excepted" condition breaking the tests.
-// Tests related to that "first PHP open tag excepted" condition should go in separate files.
+// tests related to that "first PHP open tag excepted" condition should go in separate files.
 
 // TEST CASE FILE FOR TESTS RELATED TO EMPTY TAG SETS USING THE SHORT OPEN TAG ONLY.
 
@@ -45,4 +45,4 @@ or indentation if there is code _after_ the removed empty tag.
 <?php
 // This test case file MUST always end with an unclosed long open PHP tag (with this comment) to prevent
 // the tests running into the "last PHP closing tag excepted" condition breaking tests.
-// Tests related to that "last PHP closing tag excepted" condition should go in separate files.
+// tests related to that "last PHP closing tag excepted" condition should go in separate files.

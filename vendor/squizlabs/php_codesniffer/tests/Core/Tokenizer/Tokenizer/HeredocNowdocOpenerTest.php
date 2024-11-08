@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the tokenization of heredoc/nowdoc opener tokens.
+ * tests the tokenization of heredoc/nowdoc opener tokens.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2024 PHPCSStandards and contributors

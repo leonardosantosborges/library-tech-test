@@ -259,7 +259,7 @@
  * @return void
  */
 
-// Tests to check handling empty doc comments.
+// tests to check handling empty doc comments.
 /**
  */
 

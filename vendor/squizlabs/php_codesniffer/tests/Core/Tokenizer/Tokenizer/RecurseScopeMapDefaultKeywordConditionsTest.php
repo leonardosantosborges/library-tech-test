@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the retokenization of the `default` keyword to T_MATCH_DEFAULT for PHP 8.0 match structures
+ * tests the retokenization of the `default` keyword to T_MATCH_DEFAULT for PHP 8.0 match structures
  * and makes sure that the tokenization of switch `T_DEFAULT` structures is not aversely affected.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>

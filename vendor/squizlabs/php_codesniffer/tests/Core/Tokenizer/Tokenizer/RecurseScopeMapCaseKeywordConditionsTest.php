@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests converting enum "case" to T_ENUM_CASE.
+ * tests converting enum "case" to T_ENUM_CASE.
  *
  * @author    Jaroslav Hanslík <kukulich@kukulich.cz>
  * @copyright 2021 Squiz Pty Ltd (ABN 77 084 670 600)

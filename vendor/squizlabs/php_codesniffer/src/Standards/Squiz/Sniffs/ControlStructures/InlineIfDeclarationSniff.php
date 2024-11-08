@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the spacing of shorthand IF statements.
+ * tests the spacing of shorthand IF statements.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)

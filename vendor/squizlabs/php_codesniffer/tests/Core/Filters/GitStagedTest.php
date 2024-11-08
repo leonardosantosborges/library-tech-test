@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests for the \PHP_CodeSniffer\Filters\GitStaged class.
+ * tests for the \PHP_CodeSniffer\Filters\GitStaged class.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2023 PHPCSStandards Contributors
@@ -15,7 +15,7 @@ use RecursiveArrayIterator;
 use ReflectionMethod;
 
 /**
- * Tests for the \PHP_CodeSniffer\Filters\GitStaged class.
+ * tests for the \PHP_CodeSniffer\Filters\GitStaged class.
  *
  * @covers \PHP_CodeSniffer\Filters\GitStaged
  */
@@ -139,14 +139,14 @@ final class GitStagedTest extends AbstractFilterTestCase
                 'outputGitStaged' => [
                     '.gitignore',
                     'phpcs.xml.dist',
-                    'src/Standards/Squiz/Tests/WhiteSpace/OperatorSpacingUnitTest.js.fixed',
+                    'src/Standards/Squiz/tests/WhiteSpace/OperatorSpacingUnitTest.js.fixed',
                 ],
                 'expectedOutput'  => [
                     $basedir.'/src',
                     $basedir.'/src/Standards',
                     $basedir.'/src/Standards/Squiz',
-                    $basedir.'/src/Standards/Squiz/Tests',
-                    $basedir.'/src/Standards/Squiz/Tests/WhiteSpace',
+                    $basedir.'/src/Standards/Squiz/tests',
+                    $basedir.'/src/Standards/Squiz/tests/WhiteSpace',
                 ],
             ],
 
@@ -175,11 +175,11 @@ final class GitStagedTest extends AbstractFilterTestCase
                     '.yamllint.yml',
                     'autoload.php',
                     'src/Standards/Squiz/Sniffs/WhiteSpace/OperatorSpacingSniff.php',
-                    'src/Standards/Squiz/Tests/WhiteSpace/OperatorSpacingUnitTest.1.inc',
-                    'src/Standards/Squiz/Tests/WhiteSpace/OperatorSpacingUnitTest.1.inc.fixed',
-                    'src/Standards/Squiz/Tests/WhiteSpace/OperatorSpacingUnitTest.js',
-                    'src/Standards/Squiz/Tests/WhiteSpace/OperatorSpacingUnitTest.js.fixed',
-                    'src/Standards/Squiz/Tests/WhiteSpace/OperatorSpacingUnitTest.php',
+                    'src/Standards/Squiz/tests/WhiteSpace/OperatorSpacingUnitTest.1.inc',
+                    'src/Standards/Squiz/tests/WhiteSpace/OperatorSpacingUnitTest.1.inc.fixed',
+                    'src/Standards/Squiz/tests/WhiteSpace/OperatorSpacingUnitTest.js',
+                    'src/Standards/Squiz/tests/WhiteSpace/OperatorSpacingUnitTest.js.fixed',
+                    'src/Standards/Squiz/tests/WhiteSpace/OperatorSpacingUnitTest.php',
                 ],
                 'expectedOutput'  => [
                     $basedir.'/autoload.php',
@@ -189,11 +189,11 @@ final class GitStagedTest extends AbstractFilterTestCase
                     $basedir.'/src/Standards/Squiz/Sniffs',
                     $basedir.'/src/Standards/Squiz/Sniffs/WhiteSpace',
                     $basedir.'/src/Standards/Squiz/Sniffs/WhiteSpace/OperatorSpacingSniff.php',
-                    $basedir.'/src/Standards/Squiz/Tests',
-                    $basedir.'/src/Standards/Squiz/Tests/WhiteSpace',
-                    $basedir.'/src/Standards/Squiz/Tests/WhiteSpace/OperatorSpacingUnitTest.1.inc',
-                    $basedir.'/src/Standards/Squiz/Tests/WhiteSpace/OperatorSpacingUnitTest.js',
-                    $basedir.'/src/Standards/Squiz/Tests/WhiteSpace/OperatorSpacingUnitTest.php',
+                    $basedir.'/src/Standards/Squiz/tests',
+                    $basedir.'/src/Standards/Squiz/tests/WhiteSpace',
+                    $basedir.'/src/Standards/Squiz/tests/WhiteSpace/OperatorSpacingUnitTest.1.inc',
+                    $basedir.'/src/Standards/Squiz/tests/WhiteSpace/OperatorSpacingUnitTest.js',
+                    $basedir.'/src/Standards/Squiz/tests/WhiteSpace/OperatorSpacingUnitTest.php',
                 ],
             ],
         ];

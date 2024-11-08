@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the support of PHP 8 attributes
+ * tests the support of PHP 8 attributes
  *
  * @author    Alessandro Chitolina <alekitto@gmail.com>
  * @copyright 2019 Squiz Pty Ltd (ABN 77 084 670 600)

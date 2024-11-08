@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the tokenization of heredoc/nowdoc closer tokens.
+ * tests the tokenization of heredoc/nowdoc closer tokens.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2020 Squiz Pty Ltd (ABN 77 084 670 600)

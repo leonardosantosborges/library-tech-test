@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests that typed OO constants will be tokenized correctly for:
+ * tests that typed OO constants will be tokenized correctly for:
  * - the type keywords, including keywords like array (T_STRING).
  * - the ? in nullable types
  * - namespaced name types (PHPCS 3.x vs 4.x).

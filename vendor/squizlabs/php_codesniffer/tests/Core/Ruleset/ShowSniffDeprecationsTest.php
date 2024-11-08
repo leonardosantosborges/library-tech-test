@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests PHPCS native handling of sniff deprecations.
+ * tests PHPCS native handling of sniff deprecations.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2024 Juliette Reinders Folmer. All rights reserved.
@@ -14,7 +14,7 @@ use PHP_CodeSniffer\Tests\ConfigDouble;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Tests PHPCS native handling of sniff deprecations.
+ * tests PHPCS native handling of sniff deprecations.
  *
  * @covers \PHP_CodeSniffer\Ruleset::hasSniffDeprecations
  * @covers \PHP_CodeSniffer\Ruleset::showSniffDeprecations

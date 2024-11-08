@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests that embedded variables and expressions in double quoted strings are tokenized
+ * tests that embedded variables and expressions in double quoted strings are tokenized
  * as one double quoted string token.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>

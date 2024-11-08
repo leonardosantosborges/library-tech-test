@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the adding of the "parenthesis" keys to an anonymous class token.
+ * tests the adding of the "parenthesis" keys to an anonymous class token.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2019 Squiz Pty Ltd (ABN 77 084 670 600)

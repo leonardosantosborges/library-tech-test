@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the tokenization of identifier names.
+ * tests the tokenization of identifier names.
  *
  * As of PHP 8, identifier names are tokenized differently, depending on them being
  * either fully qualified, partially qualified or relative to the current namespace.

@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the tokenization of explicit octal notation to PHP < 8.1.
+ * tests the tokenization of explicit octal notation to PHP < 8.1.
  *
  * @author    Mark Baker <mark@demon-angel.eu>
  * @copyright 2019 Squiz Pty Ltd (ABN 77 084 670 600)

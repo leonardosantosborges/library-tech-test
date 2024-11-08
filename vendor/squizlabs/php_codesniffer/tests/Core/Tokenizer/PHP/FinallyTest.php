@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the tokenization of the finally keyword.
+ * tests the tokenization of the finally keyword.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2021 Squiz Pty Ltd (ABN 77 084 670 600)

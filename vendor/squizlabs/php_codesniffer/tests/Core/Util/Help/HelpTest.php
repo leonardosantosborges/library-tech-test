@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests to verify that the "help" command functions as expected.
+ * tests to verify that the "help" command functions as expected.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2024 Juliette Reinders Folmer. All rights reserved.
@@ -167,7 +167,7 @@ final class HelpTest extends TestCase
     /**
      * Test filtering of the options by requested options.
      *
-     * Tests that:
+     * tests that:
      * - Options not explicitly requested are removed.
      * - Short options passed via the longOptions array are still respected.
      * - A category gets removed if all options are removed, even if the category still has spacers.

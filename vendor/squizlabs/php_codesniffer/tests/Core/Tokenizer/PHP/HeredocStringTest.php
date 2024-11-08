@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests that embedded variables and expressions in heredoc strings are tokenized
+ * tests that embedded variables and expressions in heredoc strings are tokenized
  * as one heredoc string token.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>

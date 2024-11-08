@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the conversion of PHPCS native context sensitive keyword tokens to T_STRING.
+ * tests the conversion of PHPCS native context sensitive keyword tokens to T_STRING.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2020 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -12,7 +12,7 @@ namespace PHP_CodeSniffer\Tests\Core\Tokenizer\PHP;
 use PHP_CodeSniffer\Tests\Core\Tokenizer\AbstractTokenizerTestCase;
 
 /**
- * Tests the conversion of PHPCS native context sensitive keyword tokens to T_STRING.
+ * tests the conversion of PHPCS native context sensitive keyword tokens to T_STRING.
  *
  * @covers PHP_CodeSniffer\Tokenizers\PHP::tokenize
  * @covers PHP_CodeSniffer\Tokenizers\PHP::standardiseToken

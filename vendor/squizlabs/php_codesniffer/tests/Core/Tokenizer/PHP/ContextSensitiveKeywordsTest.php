@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the conversion of PHP native context sensitive keywords to T_STRING.
+ * tests the conversion of PHP native context sensitive keywords to T_STRING.
  *
  * @author    Jaroslav Hanslík <kukulich@kukulich.cz>
  * @copyright 2020 Squiz Pty Ltd (ABN 77 084 670 600)

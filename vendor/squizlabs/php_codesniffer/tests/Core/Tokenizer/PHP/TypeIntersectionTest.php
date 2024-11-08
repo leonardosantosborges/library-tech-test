@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the conversion of bitwise and tokens to type intersection tokens.
+ * tests the conversion of bitwise and tokens to type intersection tokens.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @author    Jaroslav Hanslík <kukulich@kukulich.cz>

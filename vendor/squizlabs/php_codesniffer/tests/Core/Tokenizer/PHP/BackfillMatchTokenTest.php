@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the backfilling of the T_MATCH token to PHP < 8.0, as well as the
+ * tests the backfilling of the T_MATCH token to PHP < 8.0, as well as the
  * setting of parenthesis/scopes for match control structures across PHP versions.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>

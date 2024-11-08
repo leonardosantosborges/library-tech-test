@@ -1,6 +1,6 @@
 <?php
 /**
- * Tests the tokenization for an unclosed heredoc construct.
+ * tests the tokenization for an unclosed heredoc construct.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2024 PHPCSStandards and contributors
@@ -12,7 +12,7 @@ namespace PHP_CodeSniffer\Tests\Core\Tokenizer\PHP;
 use PHP_CodeSniffer\Tests\Core\Tokenizer\AbstractTokenizerTestCase;
 
 /**
- * Tests the tokenization for an unclosed heredoc construct.
+ * tests the tokenization for an unclosed heredoc construct.
  *
  * @covers PHP_CodeSniffer\Tokenizers\PHP::tokenize
  */
