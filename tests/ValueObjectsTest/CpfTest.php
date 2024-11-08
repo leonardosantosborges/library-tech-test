@@ -38,6 +38,6 @@ class CpfTest extends TestCase
     public function testCpfWithMoreThan11DigitsShouldNotBeValid()
     {
         $this->expectException(\InvalidArgumentException::class);
-        new Cpf('123.456.789-012'); // CPF com 12 dígitos
+        new Cpf('123.456.789-012');
     }
 }
