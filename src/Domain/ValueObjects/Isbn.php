@@ -16,27 +16,28 @@ class Isbn
 
     private function validateIsbn(string $isbn): string
     {
-        $cleanIsbn = str_replace(['-', ' '], '', $isbn);
+        $cleanIsbn = null;
 
-        try {
-            if (strlen($isbn) === 17 || strlen($cleanIsbn) === 13) {
-                if (ctype_digit($isbn)) {
-                    $isbn = IsbnObject::convertToIsbn13($isbn);
-                }
-                IsbnObject::validateAsIsbn13($isbn);
-            } elseif (strlen($isbn) === 13 || strlen($cleanIsbn) === 10) {
-                if (ctype_digit($isbn)) {
-                    $isbn = IsbnObject::convertToIsbn10($isbn);
-                }
-                IsbnObject::validateAsIsbn10($isbn);
-            } else {
-                throw new IsbnValidationException("Invalid ISBN format");
-            }
-        } catch (IsbnValidationException $e) {
-            throw new IsbnValidationException("Invalid ISBN: " . $e->getMessage());
+        if (!preg_match('/^[0-9X]+$/', $isbn)) {
+            $cleanIsbn = str_replace(['-', ' '], '', strtoupper($isbn));
         }
 
-        return $isbn;
+        if (strlen($cleanIsbn) === 13 || (strlen($isbn) === 13 && $cleanIsbn === null)) {
+            if ($cleanIsbn === null) {
+                $isbn = IsbnObject::convertToIsbn13($isbn);
+            }
+            IsbnObject::validateAsIsbn13($isbn);
+            return $isbn;
+        }
+        if (strlen($cleanIsbn) === 10 || (strlen($isbn) === 10 && $cleanIsbn === null)) {
+            if ($cleanIsbn === null) {
+                $isbn = IsbnObject::convertToIsbn10($isbn);
+            }
+            IsbnObject::validateAsIsbn10($isbn);
+            return $isbn;
+        }
+
+        throw new IsbnValidationException("Invalid ISBN format. Must be ISBN-10 or ISBN-13.");
     }
 
     public function getIsbn(): string

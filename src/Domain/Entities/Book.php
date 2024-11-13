@@ -1,26 +1,27 @@
 <?php
 
-namespace Entities;
+namespace Domain\Entities;
 
-use ValueObjects\Isbn;
+use DateTimeImmutable;
+use Domain\ValueObjects\Isbn;
 
 class Book
 {
     private Isbn $isbn;
     private string $title;
     private string $author;
-    private \DateTimeImmutable $publicationDate;
+    private DateTimeImmutable $publicationDate;
     private int $stock;
 
     /**
-     * @param string $isbn
+     * @param Isbn $isbn
      * @param string $title
      * @param string $author
      * @param \DateTimeImmutable $publicationDate
      * @param int $stock
      */
     public function __construct(
-        string $isbn,
+        Isbn $isbn,
         string $title,
         string $author,
         \DateTimeImmutable $publicationDate,
@@ -31,5 +32,35 @@ class Book
         $this->author = $author;
         $this->publicationDate = $publicationDate;
         $this->stock = $stock;
+    }
+
+    public function setStock(int $stock): void
+    {
+        $this->stock = $stock;
+    }
+
+    public function getIsbn(): Isbn
+    {
+        return $this->isbn;
+    }
+
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    public function getAuthor(): string
+    {
+        return $this->author;
+    }
+
+    public function getPublicationDate(): DateTimeImmutable
+    {
+        return $this->publicationDate;
+    }
+
+    public function getStock(): int
+    {
+        return $this->stock;
     }
 }

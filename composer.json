@@ -1,7 +1,8 @@
 {
   "autoload": {
     "psr-4": {
-      "Domain\\": "src/Domain/"
+      "Domain\\": "src/Domain/",
+      "Src\\": "src/"
     }
   },
   "autoload-dev": {
@@ -14,6 +15,8 @@
     "phpunit/phpunit": "^11.4"
   },
   "require": {
-    "biblys/isbn": "~3.0"
+    "biblys/isbn": "~3.0",
+    "symfony/var-dumper": "^7.1",
+    "ext-pdo": "*"
   }
 }

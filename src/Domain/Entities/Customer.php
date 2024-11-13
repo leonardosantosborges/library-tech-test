@@ -1,6 +1,6 @@
 <?php
 
-namespace Entities;
+namespace Domain\Entities;
 
 use Cpf;
 use Email;

@@ -22,7 +22,7 @@ class IsbnTest extends TestCase
 
     public function testIsbn10WithoutHyphenShouldBeValid()
     {
-        $isbn = new Isbn('0708109683');
+        $isbn = new Isbn('0745562655');
         $this->assertInstanceOf(Isbn::class, $isbn);
     }
 
