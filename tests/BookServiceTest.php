@@ -286,8 +286,12 @@ class BookServiceTest extends TestCase
         $isbn = '978-3-16-148410-0';
         $invalidQuantity = -5;
 
+        $this->bookRepository
+            ->method('updateStock')
+            ->will($this->throwException(new \InvalidArgumentException('Quantity must be greater than zero.')));
+
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectExceptionMessage('Stock quantity cannot be negative.');
+        $this->expectExceptionMessage('Quantity must be greater than zero.');
 
         $this->bookService->updateStock($isbn, $invalidQuantity);
     }

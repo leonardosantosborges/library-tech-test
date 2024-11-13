@@ -28,10 +28,6 @@ class BookService
 
     public function updateStock(string $isbn, int $quantity): bool
     {
-        if ($quantity <= 0) {
-            throw new \InvalidArgumentException('Stock quantity cannot be negative.');
-        }
-
         return $this->bookRepository->updateStock($isbn, $quantity);
     }
 

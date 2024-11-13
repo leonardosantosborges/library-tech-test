@@ -7,20 +7,30 @@ use PDO;
 use Domain\Entities\Book;
 use Domain\ValueObjects\Isbn;
 use Src\Application\DTOs\BookDto;
+use InvalidArgumentException;
+use RuntimeException;
 
 class BookRepositorySqlite implements BookRepository
 {
-    private $pdo;
+    private PDO $pdo;
 
     public function __construct()
     {
-        $this->pdo = new PDO('sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-        ]);
+        try {
+            $this->pdo = new PDO('sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+            ]);
+        } catch (RuntimeException $e) {
+            throw new RuntimeException('Failed to connect to the database: ' . $e->getMessage());
+        }
     }
 
     public function getBookDetails(string $isbn): ?Book
     {
+        if (!Isbn::validateIsbn($isbn)) {
+            throw new InvalidArgumentException('Invalid ISBN format.');
+        }
+
         $stmt = $this->pdo->prepare('SELECT * FROM books WHERE isbn = ? LIMIT 1');
         $stmt->execute([$isbn]);
         $bookData = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -30,6 +40,10 @@ class BookRepositorySqlite implements BookRepository
 
     public function checkAvailability(string $isbn): bool
     {
+        if (!Isbn::validateIsbn($isbn)) {
+            throw new InvalidArgumentException('Invalid ISBN format.');
+        }
+
         $stmt = $this->pdo->prepare('SELECT stock FROM books WHERE isbn = ? LIMIT 1');
         $stmt->execute([$isbn]);
         $stock = $stmt->fetchColumn();
@@ -39,8 +53,20 @@ class BookRepositorySqlite implements BookRepository
 
     public function updateStock(string $isbn, int $quantity): bool
     {
-        $stmt = $this->pdo->prepare('UPDATE books SET stock = stock + ? WHERE isbn = ?');
-        return $stmt->execute([$quantity, $isbn]);
+        if ($quantity <= 0) {
+            throw new InvalidArgumentException('Quantity must be greater than zero.');
+        }
+
+        if (!Isbn::validateIsbn($isbn)) {
+            throw new InvalidArgumentException('Invalid ISBN format.');
+        }
+
+        try {
+            $stmt = $this->pdo->prepare('UPDATE books SET stock = stock + ? WHERE isbn = ?');
+            return $stmt->execute([$quantity, $isbn]);
+        } catch (RuntimeException $e) {
+            throw new RuntimeException('Failed to update stock: ' . $e->getMessage());
+        }
     }
 
     public function getBooksByAuthor(string $author): array
@@ -59,19 +85,35 @@ class BookRepositorySqlite implements BookRepository
 
     public function save(BookDto $bookDto): void
     {
-        $stmt = $this->pdo->prepare('INSERT INTO books (isbn, title, author, stock) VALUES (?, ?, ?, ?)');
-        $stmt->execute([
-            $bookDto->getIsbn()->getIsbn(),
-            $bookDto->getTitle(),
-            $bookDto->getAuthor(),
-            $bookDto->getStock()
-        ]);
+        if (!Isbn::validateIsbn($bookDto->getIsbn()->getIsbn())) {
+            throw new InvalidArgumentException('Invalid ISBN format.');
+        }
+
+        try {
+            $stmt = $this->pdo->prepare('INSERT INTO books (isbn, title, author, stock) VALUES (?, ?, ?, ?)');
+            $stmt->execute([
+                $bookDto->getIsbn()->getIsbn(),
+                $bookDto->getTitle(),
+                $bookDto->getAuthor(),
+                $bookDto->getStock()
+            ]);
+        } catch (RuntimeException $e) {
+            throw new RuntimeException('Failed to save book: ' . $e->getMessage());
+        }
     }
 
     public function removeBook(string $isbn): bool
     {
-        $stmt = $this->pdo->prepare('DELETE FROM books WHERE isbn = ?');
-        return $stmt->execute([$isbn]);
+        if (!Isbn::validateIsbn($isbn)) {
+            throw new InvalidArgumentException('Invalid ISBN format.');
+        }
+
+        try {
+            $stmt = $this->pdo->prepare('DELETE FROM books WHERE isbn = ?');
+            return $stmt->execute([$isbn]);
+        } catch (RuntimeException $e) {
+            throw new RuntimeException('Failed to remove book: ' . $e->getMessage());
+        }
     }
 
     private function mapBook(array $bookData): Book

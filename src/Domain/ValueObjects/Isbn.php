@@ -14,7 +14,7 @@ class Isbn
         $this->isbn = $this->validateIsbn($isbn);
     }
 
-    private function validateIsbn(string $isbn): string
+    static public function validateIsbn(string $isbn): string
     {
         $cleanIsbn = null;
 
