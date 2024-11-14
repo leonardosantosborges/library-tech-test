@@ -27,9 +27,7 @@ class BookRepositorySqlite implements BookRepository
 
     public function getBookDetails(string $isbn): ?Book
     {
-        if (!Isbn::validateIsbn($isbn)) {
-            throw new InvalidArgumentException('Invalid ISBN format.');
-        }
+        Isbn::validateIsbn($isbn);
 
         $stmt = $this->pdo->prepare('SELECT * FROM books WHERE isbn = ? LIMIT 1');
         $stmt->execute([$isbn]);
@@ -40,9 +38,7 @@ class BookRepositorySqlite implements BookRepository
 
     public function checkAvailability(string $isbn): bool
     {
-        if (!Isbn::validateIsbn($isbn)) {
-            throw new InvalidArgumentException('Invalid ISBN format.');
-        }
+        Isbn::validateIsbn($isbn);
 
         $stmt = $this->pdo->prepare('SELECT stock FROM books WHERE isbn = ? LIMIT 1');
         $stmt->execute([$isbn]);
@@ -57,9 +53,7 @@ class BookRepositorySqlite implements BookRepository
             throw new InvalidArgumentException('Quantity must be greater than zero.');
         }
 
-        if (!Isbn::validateIsbn($isbn)) {
-            throw new InvalidArgumentException('Invalid ISBN format.');
-        }
+        Isbn::validateIsbn($isbn);
 
         try {
             $stmt = $this->pdo->prepare('UPDATE books SET stock = stock + ? WHERE isbn = ?');
@@ -85,9 +79,7 @@ class BookRepositorySqlite implements BookRepository
 
     public function save(BookDto $bookDto): void
     {
-        if (!Isbn::validateIsbn($bookDto->getIsbn()->getIsbn())) {
-            throw new InvalidArgumentException('Invalid ISBN format.');
-        }
+        Isbn::validateIsbn($bookDto->getIsbn()->getIsbn());
 
         try {
             $stmt = $this->pdo->prepare('INSERT INTO books (isbn, title, author, stock) VALUES (?, ?, ?, ?)');
@@ -104,9 +96,7 @@ class BookRepositorySqlite implements BookRepository
 
     public function removeBook(string $isbn): bool
     {
-        if (!Isbn::validateIsbn($isbn)) {
-            throw new InvalidArgumentException('Invalid ISBN format.');
-        }
+        Isbn::validateIsbn($isbn);
 
         try {
             $stmt = $this->pdo->prepare('DELETE FROM books WHERE isbn = ?');

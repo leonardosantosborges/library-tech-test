@@ -26,4 +26,24 @@ class CustomerDto
         $this->email = $email;
         $this->phoneNumber = $phoneNumber;
     }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function getCpf(): Cpf
+    {
+        return $this->cpf;
+    }
+
+    public function getEmail(): Email
+    {
+        return $this->email;
+    }
+
+    public function getPhoneNumber(): PhoneNumber
+    {
+        return $this->phoneNumber;
+    }
 }

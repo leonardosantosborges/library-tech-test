@@ -2,7 +2,7 @@
 
 namespace Domain\Entities;
 
-use App\Infrastructure\Employee\PasswordHasherPhp;
+use Src\Infrastructure\Employee\PasswordHasherPhp;
 use Cpf;
 use Email;
 

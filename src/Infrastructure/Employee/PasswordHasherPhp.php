@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Infrastructure\Employee;
+namespace Src\Infrastructure\Employee;
+use Domain\Services\PasswordHasher;
 
-class PasswordHasherPhp implements \Services\PasswordHasher
+class PasswordHasherPhp implements PasswordHasher
 {
     public static function hash(string $password): string
     {

@@ -16,9 +16,13 @@ class LoanRepositorySqlite implements LoanRepository
 
     public function __construct()
     {
-        $this->pdo = new PDO('sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-        ]);
+        try {
+            $this->pdo = new PDO('sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+            ]);
+        } catch (RuntimeException $e) {
+            throw new RuntimeException('Failed to connect to the database: ' . $e->getMessage());
+        }
     }
 
     public function save(LoanDto $loanDto)

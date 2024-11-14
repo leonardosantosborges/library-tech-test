@@ -30,4 +30,9 @@ class PhoneNumber
 
         $this->number = $number;
     }
+
+    public function getPhoneNumber(): string
+    {
+        return $this->areaCode . $this->number;
+    }
 }

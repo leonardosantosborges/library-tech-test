@@ -1,7 +1,8 @@
 <?php
 
-namespace Tests;
+namespace LibraryTechTest;
 
+use Domain\Services\LoanService;
 use PHPUnit\Framework\TestCase;
 use Src\Application\DTOs\LoanDto;
 use Src\Infrastructure\Repositories\LoanRepositorySqlite;
@@ -9,7 +10,6 @@ use Domain\Entities\Loan;
 use Domain\ValueObjects\Isbn;
 use Domain\ValueObjects\Cpf;
 use Domain\Enums\LoanStatus;
-use Domain\Services\LoanService;
 use DateTimeImmutable;
 
 class LoanServiceTest extends TestCase

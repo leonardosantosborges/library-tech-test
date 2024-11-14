@@ -2,8 +2,8 @@
 
 namespace LibraryTechTest;
 
-use PHPUnit\Framework\TestCase;
 use Domain\Services\BookService;
+use PHPUnit\Framework\TestCase;
 use Domain\Entities\Book;
 use Domain\ValueObjects\Isbn;
 use Src\Infrastructure\Repositories\BookRepositorySqlite;
