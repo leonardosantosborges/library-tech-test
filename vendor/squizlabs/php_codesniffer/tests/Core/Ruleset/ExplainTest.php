@@ -1,6 +1,6 @@
 <?php
 /**
- * tests to verify that the "explain" command functions as expected.
+ * Tests to verify that the "explain" command functions as expected.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2023 Juliette Reinders Folmer. All rights reserved.
@@ -170,7 +170,7 @@ final class ExplainTest extends TestCase
      * Test the output of the "explain" command for a standard containing both deprecated
      * and non-deprecated sniffs.
      *
-     * tests that:
+     * Tests that:
      * - Deprecated sniffs are marked with an asterix in the list.
      * - A footnote is displayed explaining the asterix.
      * - And that the "standard uses # deprecated sniffs" listing is **not** displayed.

@@ -1,6 +1,6 @@
 <?php
 /**
- * tests that the correct Subversion properties are set.
+ * Tests that the correct Subversion properties are set.
  *
  * @author    Jack Bates <ms419@freezone.co.uk>
  * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)

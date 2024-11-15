@@ -1,6 +1,6 @@
 <?php
 /**
- * tests for the \PHP_CodeSniffer\Files\File:getCondition and \PHP_CodeSniffer\Files\File:hasCondition methods.
+ * Tests for the \PHP_CodeSniffer\Files\File:getCondition and \PHP_CodeSniffer\Files\File:hasCondition methods.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2022-2024 PHPCSStandards Contributors
@@ -13,7 +13,7 @@ use PHP_CodeSniffer\Tests\Core\AbstractMethodUnitTest;
 use PHP_CodeSniffer\Util\Tokens;
 
 /**
- * tests for the \PHP_CodeSniffer\Files\File:getCondition and \PHP_CodeSniffer\Files\File:hasCondition methods.
+ * Tests for the \PHP_CodeSniffer\Files\File:getCondition and \PHP_CodeSniffer\Files\File:hasCondition methods.
  *
  * @covers \PHP_CodeSniffer\Files\File::getCondition
  * @covers \PHP_CodeSniffer\Files\File::hasCondition

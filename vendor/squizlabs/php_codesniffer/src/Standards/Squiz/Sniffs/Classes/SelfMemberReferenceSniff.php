@@ -1,6 +1,6 @@
 <?php
 /**
- * tests self member references.
+ * Tests self member references.
  *
  * Verifies that :
  * - self:: is used instead of Self::

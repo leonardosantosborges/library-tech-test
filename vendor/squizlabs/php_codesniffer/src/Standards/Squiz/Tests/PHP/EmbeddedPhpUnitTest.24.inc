@@ -2,7 +2,7 @@
 
 // This test case file MUST always start with a open PHP tag set (with this comment) to prevent
 // the tests running into the "first PHP open tag excepted" condition breaking the tests.
-// tests related to that "first PHP open tag excepted" condition should go in separate files.
+// Tests related to that "first PHP open tag excepted" condition should go in separate files.
 
 // This test case file only deals with SHORT OPEN TAGS.
 
@@ -22,4 +22,4 @@
 <?
 // This test case file MUST always end with an unclosed open PHP tag (with this comment) to prevent
 // the tests running into the "last PHP closing tag excepted" condition breaking tests.
-// tests related to that "last PHP closing tag excepted" condition should go in separate files.
+// Tests related to that "last PHP closing tag excepted" condition should go in separate files.

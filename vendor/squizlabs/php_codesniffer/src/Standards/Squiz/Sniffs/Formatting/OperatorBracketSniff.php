@@ -1,6 +1,6 @@
 <?php
 /**
- * tests that all arithmetic operations are bracketed.
+ * Tests that all arithmetic operations are bracketed.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)

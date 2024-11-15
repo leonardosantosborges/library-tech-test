@@ -1,6 +1,6 @@
 <?php
 /**
- * tests that the stars in a doc comment align correctly.
+ * Tests that the stars in a doc comment align correctly.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)

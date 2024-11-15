@@ -1,6 +1,6 @@
 <?php
 /**
- * tests that the file name and the name of the class contained within the file match.
+ * Tests that the file name and the name of the class contained within the file match.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)

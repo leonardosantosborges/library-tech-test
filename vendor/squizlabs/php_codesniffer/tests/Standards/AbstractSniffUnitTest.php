@@ -111,7 +111,7 @@ abstract class AbstractSniffUnitTest extends TestCase
 
 
     /**
-     * tests the extending classes Sniff class.
+     * Tests the extending classes Sniff class.
      *
      * @return void
      * @throws \PHPUnit\Framework\Exception

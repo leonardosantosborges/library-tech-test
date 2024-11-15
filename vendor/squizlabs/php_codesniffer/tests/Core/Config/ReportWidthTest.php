@@ -1,6 +1,6 @@
 <?php
 /**
- * tests for the \PHP_CodeSniffer\Config reportWidth value.
+ * Tests for the \PHP_CodeSniffer\Config reportWidth value.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2006-2023 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -14,7 +14,7 @@ use PHPUnit\Framework\TestCase;
 use ReflectionProperty;
 
 /**
- * tests for the \PHP_CodeSniffer\Config reportWidth value.
+ * Tests for the \PHP_CodeSniffer\Config reportWidth value.
  *
  * @covers \PHP_CodeSniffer\Config::__get
  */

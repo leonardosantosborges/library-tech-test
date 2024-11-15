@@ -1,22 +1,27 @@
 {
+  "name": "leonardosantosborges/library-tech-test",
+  "description": "A library management system.",
+  "license": "proprietary",
+  "type": "project",
   "autoload": {
     "psr-4": {
-      "Domain\\": "src/Domain/",
       "Src\\": "src/"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "LibraryTechTest\\": "tests/"
-    }
+  "require": {
+    "php": "^8.0",
+    "phpunit/phpunit": "^9.5"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.10",
-    "phpunit/phpunit": "^11.4"
+    "squizlabs/php_codesniffer": "^3.6"
   },
-  "require": {
-    "biblys/isbn": "~3.0",
-    "symfony/var-dumper": "^7.1",
-    "ext-pdo": "*"
+  "scripts": {
+    "test": "phpunit --configuration phpunit.xml",
+    "cs": "phpcs --standard=PSR2 src/ tests/"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
   }
 }

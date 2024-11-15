@@ -1,6 +1,6 @@
 <?php
 /**
- * tests for the \PHP_CodeSniffer\Sniffs\AbstractArraySniff.
+ * Tests for the \PHP_CodeSniffer\Sniffs\AbstractArraySniff.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2020 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -12,7 +12,7 @@ namespace PHP_CodeSniffer\Tests\Core\Sniffs;
 use PHP_CodeSniffer\Tests\Core\AbstractMethodUnitTest;
 
 /**
- * tests for the \PHP_CodeSniffer\Sniffs\AbstractArraySniff.
+ * Tests for the \PHP_CodeSniffer\Sniffs\AbstractArraySniff.
  *
  * @covers \PHP_CodeSniffer\Sniffs\AbstractArraySniff
  */

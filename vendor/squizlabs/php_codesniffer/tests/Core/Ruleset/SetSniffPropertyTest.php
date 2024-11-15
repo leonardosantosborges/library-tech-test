@@ -1,6 +1,6 @@
 <?php
 /**
- * tests for the handling of properties being set via the ruleset.
+ * Tests for the handling of properties being set via the ruleset.
  *
  * @author    Juliette Reinders Folmer <phpcs_nospam@adviesenzo.nl>
  * @copyright 2022 Juliette Reinders Folmer. All rights reserved.

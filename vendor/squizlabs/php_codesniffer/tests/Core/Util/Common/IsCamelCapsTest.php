@@ -1,6 +1,6 @@
 <?php
 /**
- * tests for the \PHP_CodeSniffer\Util\Common::isCamelCaps method.
+ * Tests for the \PHP_CodeSniffer\Util\Common::isCamelCaps method.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -13,7 +13,7 @@ use PHP_CodeSniffer\Util\Common;
 use PHPUnit\Framework\TestCase;
 
 /**
- * tests for the \PHP_CodeSniffer\Util\Common::isCamelCaps method.
+ * Tests for the \PHP_CodeSniffer\Util\Common::isCamelCaps method.
  *
  * @covers \PHP_CodeSniffer\Util\Common::isCamelCaps
  */

@@ -1,6 +1,6 @@
 <?php
 /**
- * tests for PHP_CodeSniffer error suppression tags.
+ * Tests for PHP_CodeSniffer error suppression tags.
  *
  * @author    Greg Sherwood <gsherwood@squiz.net>
  * @copyright 2006-2015 Squiz Pty Ltd (ABN 77 084 670 600)
@@ -15,7 +15,7 @@ use PHP_CodeSniffer\Tests\ConfigDouble;
 use PHPUnit\Framework\TestCase;
 
 /**
- * tests for PHP_CodeSniffer error suppression tags.
+ * Tests for PHP_CodeSniffer error suppression tags.
  *
  * @covers PHP_CodeSniffer\Files\File::addMessage
  * @covers PHP_CodeSniffer\Tokenizers\Tokenizer::createPositionMap
