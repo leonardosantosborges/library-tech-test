@@ -15,14 +15,14 @@ It follows **Domain-Driven Design (DDD)** principles and uses **PHP 8.0+**, **PH
 - **Composer** (Dependency Management)
 
 ## Project Structure
-
+```
 src/
   ├── Application/          # Application layer (DTOs)
   ├── Domain/               # Domain layer (Entities, Services, Repositories)
   └── Infrastructure/       # Infrastructure layer (Database Repositories)
 tests/
   ├── LibraryTechTest/      # Unit tests for the application
-
+```
 
 ### 1. Clone the repository
 ```
