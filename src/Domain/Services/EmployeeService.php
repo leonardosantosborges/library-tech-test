@@ -38,8 +38,7 @@ class EmployeeService
         Cpf $cpf,
         Email $email,
         string $password,
-    ): void
-    {
+    ): void {
         $employeeDto = new EmployeeDto(
             $name,
             $cpf,
@@ -65,8 +64,7 @@ class EmployeeService
         Cpf $cpf,
         Email $email,
         PhoneNumber $phoneNumber
-    ): void
-    {
+    ): void {
         $this->customerService->save(
             $name,
             $cpf,

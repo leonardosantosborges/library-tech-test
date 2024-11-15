@@ -1,6 +1,7 @@
 <?php
 
 namespace Src\Infrastructure\Employee;
+
 use Domain\Services\PasswordHasher;
 
 class PasswordHasherPhp implements PasswordHasher

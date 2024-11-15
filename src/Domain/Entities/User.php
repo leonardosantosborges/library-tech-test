@@ -2,8 +2,8 @@
 
 namespace Domain\Entities;
 
-use ValueObjects\Cpf;
-use ValueObjects\Email;
+use Domain\ValueObjects\Cpf;
+use Domain\ValueObjects\Email;
 
 class User
 {

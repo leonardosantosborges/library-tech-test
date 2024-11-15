@@ -2,21 +2,15 @@
 
 namespace Domain\Repositories;
 
-use Src\Application\DTOs\BookDto;
-use Src\Application\DTOs\CustomerDto;
-use Src\Application\DTOs\EmployeeDto;
+use Src\Application\DTOs\ManagerDto;
 
 interface ManagerRepository
 {
-    public function addBook(BookDto $bookDto): void;
+    public function save(ManagerDto $managerDto): void;
     
-    public function removeBook(string $isbn): bool;
+    public function remove(string $cpf): bool;
 
-    public function addEmployee(EmployeeDto $customerDto): void;
-
-    public function removeEmployee(string $cpf): bool;
-
-    public function listAllLoans(): array;
+    public function listAllManagers(): array;
     
-    public function listAllCustomers(): array;
+    public function findManagerByCpf(string $cpf): ManagerDto;
 }

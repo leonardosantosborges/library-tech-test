@@ -46,6 +46,4 @@ class EmployeeDto
     {
         return $this->password;
     }
-
-
 }

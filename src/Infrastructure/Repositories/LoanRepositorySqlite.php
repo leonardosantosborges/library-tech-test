@@ -8,11 +8,12 @@ use Domain\ValueObjects\Cpf;
 use Domain\ValueObjects\Isbn;
 use PDO;
 use Domain\Repositories\LoanRepository;
+use RuntimeException;
 use Src\Application\DTOs\LoanDto;
 
 class LoanRepositorySqlite implements LoanRepository
 {
-    private $pdo;
+    private PDO $pdo;
 
     public function __construct()
     {

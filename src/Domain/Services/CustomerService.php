@@ -26,8 +26,7 @@ class CustomerService
         Cpf $cpf,
         Email $email,
         PhoneNumber $phoneNumber
-    ): void
-    {
+    ): void {
         $customerDto = new CustomerDto(
             $name,
             $cpf,
