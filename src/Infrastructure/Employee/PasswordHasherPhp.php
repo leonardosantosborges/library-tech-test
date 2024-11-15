@@ -10,7 +10,6 @@ class PasswordHasherPhp implements PasswordHasher
     {
         return password_hash($password, PASSWORD_ARGON2ID);
     }
-
     public function verify(string $plainPassword, string $hashedPassword): bool
     {
         return password_verify($plainPassword, $hashedPassword);

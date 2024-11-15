@@ -182,7 +182,7 @@ class EmployeeServiceTest extends TestCase
             'Leonardo Borges',
             $cpf,
             new Email('leo.borges@example.com'),
-            new PhoneNumber('11','970894345')
+            new PhoneNumber('11', '970894345')
         );
 
         $this->employeeRepositoryMock->expects($this->once())
@@ -234,7 +234,8 @@ class EmployeeServiceTest extends TestCase
         $cpf = new Cpf('599.398.130-07');
         $loan1 = new Loan(
             new Isbn('978-3-16-148410-0'),
-            $cpf, new \DateTimeImmutable(),
+            $cpf,
+            new \DateTimeImmutable(),
             new \DateTimeImmutable(),
             LoanStatus::BORROWED
         );

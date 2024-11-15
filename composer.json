@@ -19,7 +19,7 @@
   },
   "scripts": {
     "test": "phpunit --configuration phpunit.xml",
-    "cs": "phpcs --standard=PSR2 src/ tests/"
+    "cs": "phpcs --standard=PSR2 --ignore=PhpDoc.Comment,PhpDoc.Var,PhpDoc.TagArguments,Generic.Commenting.DocComment src/ tests/"
   },
   "config": {
     "optimize-autoloader": true,

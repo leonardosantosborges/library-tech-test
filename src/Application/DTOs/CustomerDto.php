@@ -2,7 +2,6 @@
 
 namespace Src\Application\DTOs;
 
-
 use Src\Domain\ValueObjects\Cpf;
 use Src\Domain\ValueObjects\Email;
 use Src\Domain\ValueObjects\PhoneNumber;

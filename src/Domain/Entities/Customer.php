@@ -2,7 +2,6 @@
 
 namespace Src\Domain\Entities;
 
-
 use Src\Domain\ValueObjects\Cpf;
 use Src\Domain\ValueObjects\Email;
 use Src\Domain\ValueObjects\PhoneNumber;

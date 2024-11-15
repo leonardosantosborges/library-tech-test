@@ -2,7 +2,6 @@
 
 namespace LibraryTechTest\Services;
 
-
 use PHPUnit\Framework\TestCase;
 use Src\Application\DTOs\BookDto;
 use Src\Domain\Entities\Book;
@@ -297,5 +296,4 @@ class BookServiceTest extends TestCase
 
         $this->bookService->updateStock($isbn, $invalidQuantity);
     }
-
 }

@@ -10,7 +10,6 @@ use Src\Domain\ValueObjects\PhoneNumber;
 use Src\Infrastructure\Repositories\CustomerRepositorySqlite;
 use Src\Infrastructure\Repositories\LoanRepositorySqlite;
 
-
 class CustomerService
 {
     private CustomerRepositorySqlite $customerRepository;

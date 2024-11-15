@@ -9,7 +9,7 @@ use Src\Application\DTOs\LoanDto;
 use Src\Domain\Entities\Loan;
 use Src\Domain\Repositories\LoanRepository;
 use Src\Domain\ValueObjects\Cpf;
-use Src\ValueObjects\Isbn;
+use Src\Domain\ValueObjects\Isbn;
 
 class LoanRepositorySqlite implements LoanRepository
 {
@@ -19,7 +19,10 @@ class LoanRepositorySqlite implements LoanRepository
     {
         try {
             $this->pdo = new PDO(
-                'sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+                'sqlite:' . __DIR__ . '/../../../library.sqlite',
+                '',
+                '',
+                [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
                 ]
             );

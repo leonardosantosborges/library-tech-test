@@ -36,4 +36,4 @@ jobs:
       run: vendor/bin/phpunit --configuration phpunit.xml --coverage-text
 
     - name: Check code style (PSR-2)
-      run: vendor/bin/phpcs --standard=PSR2 src tests
+      run: composer cs

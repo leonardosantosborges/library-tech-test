@@ -16,7 +16,10 @@ class ManagerRepositorySqlite implements ManagerRepository
     {
         try {
             $this->pdo = new PDO(
-                'sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+                'sqlite:' . __DIR__ . '/../../../library.sqlite',
+                '',
+                '',
+                [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
                 ]
             );

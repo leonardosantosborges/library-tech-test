@@ -2,8 +2,6 @@
 
 namespace Src\Domain\Entities;
 
-
-
 use Src\Domain\ValueObjects\Cpf;
 use Src\Domain\ValueObjects\Email;
 use Src\Infrastructure\Employee\PasswordHasherPhp;

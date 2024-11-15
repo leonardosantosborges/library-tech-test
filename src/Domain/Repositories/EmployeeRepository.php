@@ -7,6 +7,7 @@ use Src\Application\DTOs\EmployeeDto;
 use Src\Domain\Entities\Loan;
 use Src\Domain\ValueObjects\Cpf;
 use Src\Domain\ValueObjects\Isbn;
+
 interface EmployeeRepository
 {
     public function saveEmployee(EmployeeDto $employeeDto): void;

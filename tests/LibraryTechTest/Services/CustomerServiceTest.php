@@ -2,7 +2,6 @@
 
 namespace LibraryTechTest\Services;
 
-
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use Src\Application\DTOs\CustomerDto;
@@ -131,7 +130,7 @@ class CustomerServiceTest extends TestCase
             'Leonardo Borges',
             new Cpf('716.939.860-51'),
             new Email('leo.borges@example.com'),
-            new PhoneNumber('11','987624321')
+            new PhoneNumber('11', '987624321')
         );
 
         $customerDto2 = new CustomerDto(
@@ -172,5 +171,4 @@ class CustomerServiceTest extends TestCase
         $this->assertIsArray($loans);
         $this->assertEmpty($loans);
     }
-
 }

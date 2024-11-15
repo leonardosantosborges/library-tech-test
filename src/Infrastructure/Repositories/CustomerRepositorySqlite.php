@@ -7,7 +7,7 @@ use RuntimeException;
 use Src\Application\DTOs\CustomerDto;
 use Src\Domain\Repositories\CustomerRepository;
 use Src\Domain\ValueObjects\Cpf;
-use Src\ValueObjects\Email;
+use Src\Domain\ValueObjects\Email;
 
 class CustomerRepositorySqlite implements CustomerRepository
 {
@@ -17,7 +17,10 @@ class CustomerRepositorySqlite implements CustomerRepository
     {
         try {
             $this->pdo = new PDO(
-                'sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+                'sqlite:' . __DIR__ . '/../../../library.sqlite',
+                '',
+                '',
+                [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
                 ]
             );

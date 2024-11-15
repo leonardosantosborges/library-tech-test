@@ -5,7 +5,7 @@ namespace Src\Infrastructure\Repositories;
 use Src\Domain\Repositories\BookRepository;
 use PDO;
 use Src\Domain\Entities\Book;
-use Src\ValueObjects\Isbn;
+use Src\Domain\ValueObjects\Isbn;
 use Src\Application\DTOs\BookDto;
 use InvalidArgumentException;
 use RuntimeException;
@@ -18,7 +18,10 @@ class BookRepositorySqlite implements BookRepository
     {
         try {
             $this->pdo = new PDO(
-                'sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+                'sqlite:' . __DIR__ . '/../../../library.sqlite',
+                '',
+                '',
+                [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
                 ]
             );
