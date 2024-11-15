@@ -27,9 +27,11 @@ class EmployeeRepositorySqlite implements EmployeeRepository
     public function __construct()
     {
         try {
-            $this->pdo = new PDO('sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+            $this->pdo = new PDO(
+                'sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-            ]);
+                ]
+            );
         } catch (RuntimeException $e) {
             throw new RuntimeException('Failed to connect to the database: ' . $e->getMessage());
         }
@@ -52,16 +54,20 @@ class EmployeeRepositorySqlite implements EmployeeRepository
             throw new RuntimeException("Employee with CPF {$employeeDto->getCpf()->getCpf()} already exists.");
         }
 
-        $stmt = $this->pdo->prepare('
+        $stmt = $this->pdo->prepare(
+            '
             INSERT INTO employees (name, cpf, email, password)
             VALUES (?, ?, ?, ?)
-        ');
-        $stmt->execute([
+        '
+        );
+        $stmt->execute(
+            [
             $employeeDto->getName(),
             $employeeDto->getCpf()->getCpf(),
             $employeeDto->getEmail()->getEmail(),
             PasswordHasherPhp::hash($employeeDto->getPassword())
-        ]);
+            ]
+        );
     }
 
     public function removeEmployee(Cpf $cpf): bool

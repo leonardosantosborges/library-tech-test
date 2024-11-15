@@ -18,9 +18,11 @@ class LoanRepositorySqlite implements LoanRepository
     public function __construct()
     {
         try {
-            $this->pdo = new PDO('sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+            $this->pdo = new PDO(
+                'sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-            ]);
+                ]
+            );
         } catch (RuntimeException $e) {
             throw new RuntimeException('Failed to connect to the database: ' . $e->getMessage());
         }
@@ -29,16 +31,20 @@ class LoanRepositorySqlite implements LoanRepository
     public function save(LoanDto $loanDto)
     {
         try {
-            $stmt = $this->pdo->prepare('INSERT INTO loans (isbn, borrower_cpf, loan_date, due_date, status)
-                VALUES (?, ?, ?, ?, ?)');
+            $stmt = $this->pdo->prepare(
+                'INSERT INTO loans (isbn, borrower_cpf, loan_date, due_date, status)
+                VALUES (?, ?, ?, ?, ?)'
+            );
 
-            $stmt->execute([
+            $stmt->execute(
+                [
                 $loanDto->getIsbn()->getIsbn(),
                 $loanDto->getBorrowerCpf()->getCpf(),
                 ($loanDto->getLoanDate())->format('Y-m-d'),
                 ($loanDto->getDueDate())->format('Y-m-d'),
                 $loanDto->getStatus()
-            ]);
+                ]
+            );
         } catch (\PDOException $e) {
             if ($e->getCode() === '23000') {
                 throw new \PDOException('Loan already exists: ' . $e->getMessage(), (int) $e->getCode());

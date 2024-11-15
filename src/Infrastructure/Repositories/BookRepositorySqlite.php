@@ -17,9 +17,11 @@ class BookRepositorySqlite implements BookRepository
     public function __construct()
     {
         try {
-            $this->pdo = new PDO('sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+            $this->pdo = new PDO(
+                'sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-            ]);
+                ]
+            );
         } catch (RuntimeException $e) {
             throw new RuntimeException('Failed to connect to the database: ' . $e->getMessage());
         }
@@ -83,12 +85,14 @@ class BookRepositorySqlite implements BookRepository
 
         try {
             $stmt = $this->pdo->prepare('INSERT INTO books (isbn, title, author, stock) VALUES (?, ?, ?, ?)');
-            $stmt->execute([
+            $stmt->execute(
+                [
                 $bookDto->getIsbn()->getIsbn(),
                 $bookDto->getTitle(),
                 $bookDto->getAuthor(),
                 $bookDto->getStock()
-            ]);
+                ]
+            );
         } catch (RuntimeException $e) {
             throw new RuntimeException('Failed to save book: ' . $e->getMessage());
         }

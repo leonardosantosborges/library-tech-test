@@ -15,11 +15,11 @@ class LoanDto
     private ?string $status;
 
     /**
-     * @param Isbn $isbn
-     * @param Cpf $borrowerCpf
+     * @param Isbn               $isbn
+     * @param Cpf                $borrowerCpf
      * @param ?DateTimeImmutable $loanDate
      * @param ?DateTimeImmutable $dueDate
-     * @param ?string $status
+     * @param ?string            $status
      */
     public function __construct(
         Isbn $isbn,

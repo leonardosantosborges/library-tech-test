@@ -16,9 +16,11 @@ class CustomerRepositorySqlite implements CustomerRepository
     public function __construct()
     {
         try {
-            $this->pdo = new PDO('sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+            $this->pdo = new PDO(
+                'sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-            ]);
+                ]
+            );
         } catch (RuntimeException $e) {
             throw new RuntimeException('Failed to connect to the database: ' . $e->getMessage());
         }
@@ -28,12 +30,14 @@ class CustomerRepositorySqlite implements CustomerRepository
     {
         try {
             $stmt = $this->pdo->prepare('INSERT INTO customers (cpf, name, email, phone_number) VALUES (?, ?, ?, ?)');
-            $stmt->execute([
+            $stmt->execute(
+                [
                 $customerDto->getCpf()->getCpf(),
                 $customerDto->getName(),
                 $customerDto->getEmail()->getEmail(),
                 $customerDto->getPhoneNumber()->getPhoneNumber()
-            ]);
+                ]
+            );
         } catch (RuntimeException $e) {
             throw new RuntimeException('Failed to add customer: ' . $e->getMessage());
         }

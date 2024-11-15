@@ -15,9 +15,11 @@ class ManagerRepositorySqlite implements ManagerRepository
     public function __construct(PDO $pdo)
     {
         try {
-            $this->pdo = new PDO('sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
+            $this->pdo = new PDO(
+                'sqlite:' . __DIR__ . '/../../../library.sqlite', '', '', [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-            ]);
+                ]
+            );
         } catch (RuntimeException $e) {
             throw new RuntimeException('Failed to connect to the database: ' . $e->getMessage());
         }
@@ -32,16 +34,20 @@ class ManagerRepositorySqlite implements ManagerRepository
             throw new RuntimeException("Manager with CPF {$managerDto->getCpf()} already exists.");
         }
 
-        $stmt = $this->pdo->prepare('
+        $stmt = $this->pdo->prepare(
+            '
             INSERT INTO managers (name, cpf, email, password)
             VALUES (?, ?, ?, ?)
-        ');
-        $stmt->execute([
+        '
+        );
+        $stmt->execute(
+            [
             $managerDto->getName(),
             $managerDto->getCpf(),
             $managerDto->getEmail(),
             PasswordHasherPhp::hash($managerDto->getPassword())
-        ]);
+            ]
+        );
     }
 
     public function remove(string $cpf): bool

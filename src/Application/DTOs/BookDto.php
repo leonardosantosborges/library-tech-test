@@ -14,11 +14,11 @@ class BookDto
     private int $stock;
 
     /**
-     * @param Isbn $isbn
-     * @param string $title
-     * @param string $author
+     * @param Isbn               $isbn
+     * @param string             $title
+     * @param string             $author
      * @param \DateTimeImmutable $publicationDate
-     * @param int $stock
+     * @param int                $stock
      */
     public function __construct(
         Isbn $isbn,

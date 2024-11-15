@@ -12,9 +12,9 @@ class Customer extends User
     private PhoneNumber $phone;
 
     /**
-     * @param Cpf $cpf
-     * @param string $name
-     * @param Email $email
+     * @param Cpf         $cpf
+     * @param string      $name
+     * @param Email       $email
      * @param PhoneNumber $phone
      */
     public function __construct(Cpf $cpf, string $name, Email $email, PhoneNumber $phone)

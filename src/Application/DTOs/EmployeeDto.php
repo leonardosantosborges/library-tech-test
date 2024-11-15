@@ -13,9 +13,9 @@ class EmployeeDto
     private ?string $password;
 
     /**
-     * @param string $name
-     * @param Cpf $cpf
-     * @param Email $email
+     * @param string  $name
+     * @param Cpf     $cpf
+     * @param Email   $email
      * @param ?string $password
      */
     public function __construct(string $name, Cpf $cpf, Email $email, string $password = null)

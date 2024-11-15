@@ -13,8 +13,8 @@ class User
 
     /**
      * @param string $name
-     * @param Cpf $cpf
-     * @param Email $email
+     * @param Cpf    $cpf
+     * @param Email  $email
      */
     public function __construct(string $name, Cpf $cpf, Email $email)
     {

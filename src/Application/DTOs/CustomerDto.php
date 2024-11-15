@@ -15,9 +15,9 @@ class CustomerDto
     private PhoneNumber $phoneNumber;
 
     /**
-     * @param string $name
-     * @param Cpf $cpf
-     * @param Email $email
+     * @param string      $name
+     * @param Cpf         $cpf
+     * @param Email       $email
      * @param PhoneNumber $phoneNumber
      */
     public function __construct(string $name, Cpf $cpf, Email $email, PhoneNumber $phoneNumber)

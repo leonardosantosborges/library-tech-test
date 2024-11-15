@@ -14,8 +14,8 @@ class ManagerDto
 
     /**
      * @param string $name
-     * @param Cpf $cpf
-     * @param Email $email
+     * @param Cpf    $cpf
+     * @param Email  $email
      * @param string $password
      */
     public function __construct(string $name, Cpf $cpf, Email $email, string $password)
