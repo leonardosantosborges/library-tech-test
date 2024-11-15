@@ -1,12 +1,11 @@
 <?php
 
-namespace Domain\Services;
+namespace Src\Domain\Services;
 
-use Domain\Entities\Loan;
-use Domain\Enums\LoanStatus;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Isbn;
 use Src\Application\DTOs\LoanDto;
+use Src\Domain\Enums\LoanStatus;
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Isbn;
 use Src\Infrastructure\Repositories\LoanRepositorySqlite;
 
 class LoanService

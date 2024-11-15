@@ -1,9 +1,7 @@
 <?php
 
-namespace Domain\Repositories;
+namespace Src\Domain\Repositories;
 
-use Domain\Enums\LoanStatus;
-use Domain\Entities\Loan;
 use Src\Application\DTOs\LoanDto;
 
 interface LoanRepository

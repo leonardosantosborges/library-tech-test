@@ -1,10 +1,11 @@
 <?php
 
-namespace Domain\Entities;
+namespace Src\Domain\Entities;
 
-use Cpf;
-use Email;
-use ValueObjects\PhoneNumber;
+
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Email;
+use Src\Domain\ValueObjects\PhoneNumber;
 
 class Customer extends User
 {

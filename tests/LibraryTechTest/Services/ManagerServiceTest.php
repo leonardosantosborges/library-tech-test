@@ -1,18 +1,18 @@
 <?php
 
-namespace LibraryTechTest;
+namespace LibraryTechTest\Services;
 
-use Domain\Services\BookService;
-use Domain\Services\EmployeeService;
-use Domain\Services\ManagerService;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Email;
 use PHPUnit\Framework\TestCase;
+use RuntimeException;
 use Src\Application\DTOs\ManagerDto;
+use Src\Domain\Services\BookService;
+use Src\Domain\Services\EmployeeService;
+use Src\Domain\Services\ManagerService;
+use Src\Domain\ValueObjects\Cpf;
 use Src\Infrastructure\Repositories\BookRepositorySqlite;
 use Src\Infrastructure\Repositories\EmployeeRepositorySqlite;
-use RuntimeException;
 use Src\Infrastructure\Repositories\ManagerRepositorySqlite;
+use Src\Domain\ValueObjects\Email;
 
 class ManagerServiceTest extends TestCase
 {

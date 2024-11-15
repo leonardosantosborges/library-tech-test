@@ -1,13 +1,15 @@
 <?php
 
-namespace LibraryTechTest;
+namespace LibraryTechTest\Services;
 
-use Domain\Services\BookService;
+
 use PHPUnit\Framework\TestCase;
-use Domain\Entities\Book;
-use Domain\ValueObjects\Isbn;
-use Src\Infrastructure\Repositories\BookRepositorySqlite;
 use Src\Application\DTOs\BookDto;
+use Src\Domain\Entities\Book;
+use Src\Domain\Services\BookService;
+use Src\Domain\ValueObjects\Isbn;
+use Src\Infrastructure\Repositories\BookRepositorySqlite;
+
 class BookServiceTest extends TestCase
 {
     private BookRepositorySqlite $bookRepository;

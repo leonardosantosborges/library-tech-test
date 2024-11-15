@@ -3,13 +3,13 @@
 namespace Src\Infrastructure\Repositories;
 
 use DateTimeImmutable;
-use Domain\Entities\Loan;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Isbn;
 use PDO;
-use Domain\Repositories\LoanRepository;
 use RuntimeException;
 use Src\Application\DTOs\LoanDto;
+use Src\Domain\Entities\Loan;
+use Src\Domain\Repositories\LoanRepository;
+use Src\Domain\ValueObjects\Cpf;
+use Src\ValueObjects\Isbn;
 
 class LoanRepositorySqlite implements LoanRepository
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Domain\ValueObjects;
+namespace Src\Domain\ValueObjects;
 
-use \InvalidArgumentException;
+use InvalidArgumentException;
 
 class Cpf
 {

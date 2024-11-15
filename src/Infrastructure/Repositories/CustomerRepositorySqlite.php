@@ -2,12 +2,12 @@
 
 namespace Src\Infrastructure\Repositories;
 
-use Domain\Repositories\CustomerRepository;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Email;
-use Src\Application\DTOs\CustomerDto;
 use PDO;
 use RuntimeException;
+use Src\Application\DTOs\CustomerDto;
+use Src\Domain\Repositories\CustomerRepository;
+use Src\Domain\ValueObjects\Cpf;
+use Src\ValueObjects\Email;
 
 class CustomerRepositorySqlite implements CustomerRepository
 {

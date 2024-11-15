@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\ValueObjects;
+namespace Src\Domain\ValueObjects;
 
 use Biblys\Isbn\Isbn as IsbnObject;
 use Biblys\Isbn\IsbnValidationException;

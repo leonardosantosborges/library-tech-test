@@ -2,7 +2,7 @@
 
 namespace Src\Infrastructure\Repositories;
 
-use Domain\Repositories\ManagerRepository;
+use Src\Domain\Repositories\ManagerRepository;
 use Src\Application\DTOs\ManagerDto;
 use PDO;
 use RuntimeException;

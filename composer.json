@@ -10,7 +10,9 @@
   },
   "require": {
     "php": "^8.0",
-    "phpunit/phpunit": "^9.5"
+    "biblys/isbn": "~3.0",
+    "phpunit/phpunit": "^9.5",
+    "ext-pdo": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6"

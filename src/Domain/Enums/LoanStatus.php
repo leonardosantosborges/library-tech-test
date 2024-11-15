@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Enums;
+namespace Src\Domain\Enums;
 
 class LoanStatus
 {

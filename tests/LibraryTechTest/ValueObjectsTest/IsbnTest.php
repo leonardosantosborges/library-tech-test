@@ -3,8 +3,8 @@
 namespace LibraryTechTest\ValueObjectsTest;
 
 use Biblys\Isbn\IsbnValidationException;
-use Domain\ValueObjects\Isbn;
 use PHPUnit\Framework\TestCase;
+use Src\Domain\ValueObjects\Isbn;
 
 class IsbnTest extends TestCase
 {

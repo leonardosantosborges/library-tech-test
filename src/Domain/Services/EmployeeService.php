@@ -1,17 +1,17 @@
 <?php
 
-namespace Domain\Services;
+namespace Src\Domain\Services;
 
-use Domain\Entities\Loan;
-use Domain\Repositories\CustomerRepository;
-use Domain\Repositories\LoanRepository;
-use Domain\Repositories\BookRepository;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Email;
-use Domain\ValueObjects\Isbn;
-use Domain\ValueObjects\PhoneNumber;
 use Src\Application\DTOs\CustomerDto;
 use Src\Application\DTOs\EmployeeDto;
+use Src\Domain\Entities\Loan;
+use Src\Domain\Repositories\BookRepository;
+use Src\Domain\Repositories\CustomerRepository;
+use Src\Domain\Repositories\LoanRepository;
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Email;
+use Src\Domain\ValueObjects\Isbn;
+use Src\Domain\ValueObjects\PhoneNumber;
 use Src\Infrastructure\Repositories\EmployeeRepositorySqlite;
 
 class EmployeeService

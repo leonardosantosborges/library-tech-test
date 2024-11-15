@@ -1,13 +1,12 @@
 <?php
 
-namespace Domain\Repositories;
+namespace Src\Domain\Repositories;
 
-use Domain\Entities\Loan;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Isbn;
 use Src\Application\DTOs\CustomerDto;
 use Src\Application\DTOs\EmployeeDto;
-
+use Src\Domain\Entities\Loan;
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Isbn;
 interface EmployeeRepository
 {
     public function saveEmployee(EmployeeDto $employeeDto): void;

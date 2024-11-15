@@ -1,10 +1,10 @@
 <?php
 
-namespace Domain\Entities;
+namespace Src\Domain\Entities;
 
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Email;
 use Src\Infrastructure\Employee\PasswordHasherPhp;
-use Cpf;
-use Email;
 
 class Manager extends User
 {

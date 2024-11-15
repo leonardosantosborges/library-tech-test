@@ -1,9 +1,9 @@
 <?php
 
-namespace Domain\Entities;
+namespace Src\Domain\Entities;
 
 use DateTimeImmutable;
-use Domain\ValueObjects\Isbn;
+use Src\Domain\ValueObjects\Isbn;
 
 class Book
 {

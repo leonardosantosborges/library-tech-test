@@ -46,7 +46,24 @@ class ComposerStaticInit65d0c8eee0a35c0ce3f41f08090408ae
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'B' => 
+        array (
+            'Biblys' => 
+            array (
+                0 => __DIR__ . '/..' . '/biblys/isbn/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
+        'Biblys\\Isbn\\Formatter' => __DIR__ . '/..' . '/biblys/isbn/src/Biblys/Isbn/Formatter.php',
+        'Biblys\\Isbn\\Isbn' => __DIR__ . '/..' . '/biblys/isbn/src/Biblys/Isbn/Isbn.php',
+        'Biblys\\Isbn\\IsbnParsingException' => __DIR__ . '/..' . '/biblys/isbn/src/Biblys/Isbn/IsbnParsingException.php',
+        'Biblys\\Isbn\\IsbnValidationException' => __DIR__ . '/..' . '/biblys/isbn/src/Biblys/Isbn/IsbnValidationException.php',
+        'Biblys\\Isbn\\ParsedIsbn' => __DIR__ . '/..' . '/biblys/isbn/src/Biblys/Isbn/ParsedIsbn.php',
+        'Biblys\\Isbn\\Parser' => __DIR__ . '/..' . '/biblys/isbn/src/Biblys/Isbn/Parser.php',
+        'Biblys\\Isbn\\Ranges' => __DIR__ . '/..' . '/biblys/isbn/src/Biblys/Isbn/Ranges.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
@@ -980,6 +997,7 @@ class ComposerStaticInit65d0c8eee0a35c0ce3f41f08090408ae
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit65d0c8eee0a35c0ce3f41f08090408ae::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit65d0c8eee0a35c0ce3f41f08090408ae::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit65d0c8eee0a35c0ce3f41f08090408ae::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit65d0c8eee0a35c0ce3f41f08090408ae::$classMap;
 
         }, null, ClassLoader::class);

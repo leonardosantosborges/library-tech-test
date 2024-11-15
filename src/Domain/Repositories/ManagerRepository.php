@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Repositories;
+namespace Src\Domain\Repositories;
 
 use Src\Application\DTOs\ManagerDto;
 

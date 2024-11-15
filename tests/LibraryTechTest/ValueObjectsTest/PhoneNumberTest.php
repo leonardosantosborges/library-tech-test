@@ -2,9 +2,9 @@
 
 namespace LibraryTechTest\ValueObjectsTest;
 
-use Domain\ValueObjects\PhoneNumber;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
+use Src\Domain\ValueObjects\PhoneNumber;
 
 class PhoneNumberTest extends TestCase
 {

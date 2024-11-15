@@ -1,20 +1,21 @@
 <?php
-namespace LibraryTechTest;
 
-use Domain\Entities\Loan;
-use Domain\Enums\LoanStatus;
+namespace LibraryTechTest\Services;
+
 use PHPUnit\Framework\TestCase;
-use Src\Application\DTOs\EmployeeDto;
-use Src\Infrastructure\Repositories\EmployeeRepositorySqlite;
-use Src\Infrastructure\Repositories\CustomerRepositorySqlite;
-use Src\Infrastructure\Repositories\LoanRepositorySqlite;
-use Src\Infrastructure\Repositories\BookRepositorySqlite;
-use Domain\Services\EmployeeService;
 use Src\Application\DTOs\CustomerDto;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Email;
-use Domain\ValueObjects\PhoneNumber;
-use Domain\ValueObjects\Isbn;
+use Src\Application\DTOs\EmployeeDto;
+use Src\Domain\Entities\Loan;
+use Src\Domain\Enums\LoanStatus;
+use Src\Domain\Services\EmployeeService;
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Email;
+use Src\Domain\ValueObjects\Isbn;
+use Src\Domain\ValueObjects\PhoneNumber;
+use Src\Infrastructure\Repositories\BookRepositorySqlite;
+use Src\Infrastructure\Repositories\CustomerRepositorySqlite;
+use Src\Infrastructure\Repositories\EmployeeRepositorySqlite;
+use Src\Infrastructure\Repositories\LoanRepositorySqlite;
 use function PHPUnit\Framework\assertEquals;
 
 class EmployeeServiceTest extends TestCase

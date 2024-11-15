@@ -2,10 +2,10 @@
 
 namespace Src\Infrastructure\Repositories;
 
-use Domain\Repositories\BookRepository;
+use Src\Domain\Repositories\BookRepository;
 use PDO;
-use Domain\Entities\Book;
-use Domain\ValueObjects\Isbn;
+use Src\Domain\Entities\Book;
+use Src\ValueObjects\Isbn;
 use Src\Application\DTOs\BookDto;
 use InvalidArgumentException;
 use RuntimeException;

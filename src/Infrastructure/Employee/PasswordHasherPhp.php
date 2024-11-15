@@ -2,7 +2,7 @@
 
 namespace Src\Infrastructure\Employee;
 
-use Domain\Services\PasswordHasher;
+use Src\Domain\Services\PasswordHasher;
 
 class PasswordHasherPhp implements PasswordHasher
 {

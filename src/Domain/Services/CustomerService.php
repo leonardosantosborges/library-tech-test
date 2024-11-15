@@ -1,14 +1,15 @@
 <?php
 
-namespace Domain\Services;
+namespace Src\Domain\Services;
 
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Email;
-use Domain\ValueObjects\PhoneNumber;
-use Src\Application\DTOs\CustomerDto;
 use InvalidArgumentException;
+use Src\Application\DTOs\CustomerDto;
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Email;
+use Src\Domain\ValueObjects\PhoneNumber;
 use Src\Infrastructure\Repositories\CustomerRepositorySqlite;
 use Src\Infrastructure\Repositories\LoanRepositorySqlite;
+
 
 class CustomerService
 {

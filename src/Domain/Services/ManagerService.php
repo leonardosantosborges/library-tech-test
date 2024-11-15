@@ -1,13 +1,13 @@
 <?php
 
-namespace Domain\Services;
+namespace Src\Domain\Services;
 
-use Domain\Repositories\ManagerRepository;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Email;
-use Domain\ValueObjects\Isbn;
-use Src\Application\DTOs\ManagerDto;
 use RuntimeException;
+use Src\Application\DTOs\ManagerDto;
+use Src\Domain\Repositories\ManagerRepository;
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Email;
+use Src\Domain\ValueObjects\Isbn;
 
 class ManagerService
 {

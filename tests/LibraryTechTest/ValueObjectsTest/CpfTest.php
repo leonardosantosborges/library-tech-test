@@ -2,9 +2,8 @@
 
 namespace LibraryTechTest\ValueObjectsTest;
 
-use Domain\ValueObjects\Cpf;
-use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
+use Src\Domain\ValueObjects\Cpf;
 
 class CpfTest extends TestCase
 {
@@ -25,7 +24,7 @@ class CpfTest extends TestCase
 
     public function testCpfShouldNotBeValid()
     {
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(\InvalidArgumentException::class);
         new Cpf('111.111.111-00');
     }
 

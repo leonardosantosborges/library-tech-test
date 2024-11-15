@@ -1,9 +1,9 @@
 <?php
 
-namespace Domain\Repositories;
+namespace Src\Domain\Repositories;
 
 use Src\Application\DTOs\BookDto;
-use Domain\Entities\Book;
+use Src\Domain\Entities\Book;
 
 interface BookRepository
 {

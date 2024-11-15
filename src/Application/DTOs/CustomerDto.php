@@ -2,9 +2,10 @@
 
 namespace Src\Application\DTOs;
 
-use Domain\ValueObjects\PhoneNumber;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Email;
+
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Email;
+use Src\Domain\ValueObjects\PhoneNumber;
 
 class CustomerDto
 {

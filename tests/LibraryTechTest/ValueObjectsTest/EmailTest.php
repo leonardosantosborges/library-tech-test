@@ -2,9 +2,9 @@
 
 namespace LibraryTechTest\ValueObjectsTest;
 
-use Domain\ValueObjects\Email;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
+use Src\Domain\ValueObjects\Email;
 
 class EmailTest extends TestCase
 {

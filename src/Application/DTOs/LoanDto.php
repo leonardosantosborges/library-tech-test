@@ -3,9 +3,8 @@
 namespace Src\Application\DTOs;
 
 use DateTimeImmutable;
-use Domain\Enums\LoanStatus;
-use Domain\ValueObjects\Isbn;
-use Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Isbn;
 
 class LoanDto
 {

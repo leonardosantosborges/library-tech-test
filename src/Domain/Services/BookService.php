@@ -1,9 +1,9 @@
 <?php
 
-namespace Domain\Services;
+namespace Src\Domain\Services;
 
-use Domain\Entities\Book;
-use Domain\ValueObjects\Isbn;
+use Src\Domain\Entities\Book;
+use Src\Domain\ValueObjects\Isbn;
 use Src\Infrastructure\Repositories\BookRepositorySqlite;
 use Src\Application\DTOs\BookDto;
 

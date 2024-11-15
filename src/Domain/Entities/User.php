@@ -1,9 +1,9 @@
 <?php
 
-namespace Domain\Entities;
+namespace Src\Domain\Entities;
 
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Email;
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Email;
 
 class User
 {

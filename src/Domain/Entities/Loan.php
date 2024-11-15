@@ -1,10 +1,9 @@
 <?php
 
-namespace Domain\Entities;
+namespace Src\Domain\Entities;
 
-use Domain\Enums\LoanStatus;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Isbn;
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Isbn;
 
 class Loan
 {

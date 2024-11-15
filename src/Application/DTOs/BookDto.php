@@ -3,7 +3,7 @@
 namespace Src\Application\DTOs;
 
 use DateTimeImmutable;
-use Domain\ValueObjects\Isbn;
+use Src\Domain\ValueObjects\Isbn;
 
 class BookDto
 {

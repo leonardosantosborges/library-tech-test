@@ -6,6 +6,13 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Biblys\\Isbn\\Formatter' => $vendorDir . '/biblys/isbn/src/Biblys/Isbn/Formatter.php',
+    'Biblys\\Isbn\\Isbn' => $vendorDir . '/biblys/isbn/src/Biblys/Isbn/Isbn.php',
+    'Biblys\\Isbn\\IsbnParsingException' => $vendorDir . '/biblys/isbn/src/Biblys/Isbn/IsbnParsingException.php',
+    'Biblys\\Isbn\\IsbnValidationException' => $vendorDir . '/biblys/isbn/src/Biblys/Isbn/IsbnValidationException.php',
+    'Biblys\\Isbn\\ParsedIsbn' => $vendorDir . '/biblys/isbn/src/Biblys/Isbn/ParsedIsbn.php',
+    'Biblys\\Isbn\\Parser' => $vendorDir . '/biblys/isbn/src/Biblys/Isbn/Parser.php',
+    'Biblys\\Isbn\\Ranges' => $vendorDir . '/biblys/isbn/src/Biblys/Isbn/Ranges.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'DeepCopy\\DeepCopy' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
     'DeepCopy\\Exception\\CloneException' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',

@@ -3,13 +3,22 @@
         'name' => 'leonardosantosborges/library-tech-test',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ad7cbad633fd22dc6e690a159bcd346c8da85d2d',
+        'reference' => 'cad36657e97fe51834c41ef20770e7b6fd08e192',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'biblys/isbn' => array(
+            'pretty_version' => '3.2.1',
+            'version' => '3.2.1.0',
+            'reference' => '9136415ab97f5a619bf126eaffeea20f647e2209',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../biblys/isbn',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'doctrine/instantiator' => array(
             'pretty_version' => '2.0.0',
             'version' => '2.0.0.0',
@@ -22,7 +31,7 @@
         'leonardosantosborges/library-tech-test' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ad7cbad633fd22dc6e690a159bcd346c8da85d2d',
+            'reference' => 'cad36657e97fe51834c41ef20770e7b6fd08e192',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

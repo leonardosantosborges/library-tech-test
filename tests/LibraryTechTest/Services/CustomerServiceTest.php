@@ -1,16 +1,17 @@
 <?php
 
-namespace LibraryTechTest;
+namespace LibraryTechTest\Services;
 
-use Domain\Services\CustomerService;
-use Domain\Services\LoanService;
-use PHPUnit\Framework\TestCase;
+
 use InvalidArgumentException;
+use PHPUnit\Framework\TestCase;
 use Src\Application\DTOs\CustomerDto;
+use Src\Domain\Services\CustomerService;
+use Src\Domain\Services\LoanService;
+use Src\Domain\ValueObjects\Cpf;
+use Src\Domain\ValueObjects\Email;
+use Src\Domain\ValueObjects\PhoneNumber;
 use Src\Infrastructure\Repositories\CustomerRepositorySqlite;
-use Domain\ValueObjects\Cpf;
-use Domain\ValueObjects\Email;
-use Domain\ValueObjects\PhoneNumber;
 
 class CustomerServiceTest extends TestCase
 {
